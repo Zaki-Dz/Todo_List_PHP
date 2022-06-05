@@ -1,0 +1,32 @@
+.container {
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+	.container {
+		width: 100%;
+	}
+}
+
+/* Tablet screens */
+@media (min-width: 768px) {
+	.container {
+		width: 768px;
+	}
+}
+
+/* Medium screens */
+@media (min-width: 992px) {
+	.container {
+		width: 992px;
+	}
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+	.container {
+		width: 1200px;
+	}
+}

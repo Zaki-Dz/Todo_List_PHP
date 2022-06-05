@@ -1,0 +1,173 @@
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
+/* Tablet screens */
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+/* Medium screens */
+@media (min-width: 992px) {
+  .container {
+    width: 992px;
+  }
+}
+/* Large screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: roboto, arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a,
+input,
+body main .container form button,
+button {
+  outline: none;
+}
+
+button {
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+@-webkit-keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+body {
+  background-color: #e6e6ec;
+  color: #555;
+}
+body main .container {
+  min-height: 100vh;
+  max-width: 600px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+body main .container form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+body main .container form input, body main .container form button {
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 0.5rem 2rem #ccc;
+  border: 2px solid white;
+  flex: 1;
+  min-width: 0;
+}
+@media (max-width: 767px) {
+  body main .container form input, body main .container form button {
+    padding: 0.75rem 1rem;
+  }
+}
+body main .container form button {
+  flex: 0;
+  min-width: unset;
+  transition: 0.3s;
+}
+body main .container form button:hover {
+  background-color: #5f5;
+  color: white;
+}
+body main .container .todos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body main .container .todos .todo {
+  border-radius: 1rem;
+  padding: 1rem 4rem 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 0.5rem 2rem #ccc;
+  border: 2px solid white;
+  display: flex;
+  position: relative;
+  -webkit-animation: slide 0.3s;
+          animation: slide 0.3s;
+}
+body main .container .todos .todo button {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+body main .container .todos .todo button:hover {
+  background-color: red;
+  color: white;
+}
+@media (max-width: 767px) {
+  body main .container .todos .todo {
+    padding: 0.75rem 1rem;
+  }
+  body main .container .todos .todo button {
+    top: 0.25rem;
+    right: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
